@@ -1,0 +1,18 @@
+@font-face{
+    src: url(../font/LobsterTwo-BoldItalic.ttf);
+    font-family: lobster;
+}
+body{
+    background-image: url(../images/piri.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.topnav{
+    background-color: black;
+     padding: 20px ;
+     }
+a{
+    padding: 0px 40px;
+    font-size: 30px;
+    font-family: lobster;
+}
