@@ -2,17 +2,24 @@
     src: url(../font/LobsterTwo-BoldItalic.ttf);
     font-family: lobster;
 }
-body{
+.home{
     background-image: url(../images/piri.jpg);
+    height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 .topnav{
     background-color: black;
      padding: 20px ;
-     }
+     
+}
 a{
     padding: 0px 40px;
     font-size: 30px;
+  
     font-family: lobster;
+}
+#lucy{
+    padding-top: 3%;
 }
