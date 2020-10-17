@@ -130,6 +130,10 @@
         <div class="orders">
             <h3>Orders</h3>
             <p>Enter your order details below</p>
+            <div class="row">
+
+
+            </div>
             <form>
                 <div class="form-group">
                     <label for="sel1">Select your flavour:</label>
@@ -140,79 +144,73 @@
                         <option>Pepperoni pizza</option>
                         <option>Hawaian pizza</option>
                     </select>
-                    <form>
-                        <div class="form-group">
-                            <label for="sel1">Select size :</label>
-                            <select class="form-control" id="sel1">
-                                <option>Select size here</option>
-                                <option>large-sh.1000</option>
-                                <option>medium-sh.800</option>
-                                <option>small-sh.600</option>
-                            </select>
-                            <form>
-                                <div class="form-group">
-                                    <label for="sel1">Select your favourite crust:</label>
-                                    <select class="form-control" id="sel1">
-                                        <option>Select your preffered crust here</option>
-                                        <option>Crispy</option>
-                                        <option>Stuffed</option>
-                                        <option>Glutten-free</option>
-                                    </select>
-                                    
-                                    <form>
-                                        <p>Choose your desired topping @sh.60 each</p>
-                                        <label class="radio-inline">
-                                            <input type="radio" name="optradio" checked>Onions
-                                        </label>
-                                        <label class="radio-inline">
-                                            <input type="radio" name="optradio">Bacon
-                                        </label>
-                                        <label class="radio-inline">
-                                            <input type="radio" name="optradio">Extra cheese
-                                        </label>
-                                        <label class="radio-inline">
-                                            <input type="radio" name="optradio">Sausage
-                                        </label>
-                                        <br>
-                                        
-                                        <br><input type="submit" class="btn btn-info" value="Submit">
+                </div>
+                <div class="form-group">
+                    <label for="sel1">Select size :</label>
+                    <select class="form-control" id="size">
+                        <option>Select size here</option>
+                        <option value="1000">large-sh.1000</option>
+                        <option value="800">medium-sh.800</option>
+                        <option value="600">small-sh.600</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="sel1">Select your favourite crust:</label>
+                    <select class="form-control" id="crust">
+                        <option>Select your preffered crust here</option>
+                        <option value="200">Crispy @sh.200</option>
+                        <option value="250">Stuffed @sh.250</option>
+                        <option value="300">Glutten-free @sh.300</option>
+                    </select>
+                </div>
+                <p>Choose your desired topping</p>
+                <div class="form-group" id="toppings">
+                        <input type="radio" name="topping" value="60">
+                        <input type="radio" name="topping" value="70">
+                        <input type="radio" name="topping" value="80">
+                        <input type="radio" name="topping" value="90">
+                </div>
 
-                                    </form>
+                    <div class="form-group" >
+                        <label for="usr">pizza quantity:</label>
+                        <input type="number" class="form-control" id="usr">
+                    </div>
 
-                                </div>
-
-
-                                <div class="jumbotron">
-                                    <div class="footer">
-                                        <div class="contacts">
-                                            <h2>CONTACTS</h>
-                                                <br>
-                                                <a href="http://www.instagram.com" class="fa fa-instagram"></a>
-                                                <a href="http://www.facebook.com" class="fa fa-facebook"></a>
-                                                <a href="https://twitter.com/login" class="fa fa-twitter"></a>
-                                                <h3>Location</h3>
-                                                <p>TRM||Thika Road<br>000100 Nairobi</p>
-                                        </div>
-                                    </div>
-                                </div>
+                        <input type="submit" class="btn btn-info" value="Submit" onclick="orderPizza()">
+                    <br>
+                
+            </form>
 
 
 
+            <div class="jumbotron">
+                <div class="footer">
+                    <div class="contacts">
+                        <h2>CONTACTS</h>
+                            <br>
+                            <a href="http://www.instagram.com" class="fa fa-instagram"></a>
+                            <a href="http://www.facebook.com" class="fa fa-facebook"></a>
+                            <a href="https://twitter.com/login" class="fa fa-twitter"></a>
+                            <h3>Location</h3>
+                            <p>TRM||Thika Road<br>000100 Nairobi</p>
+                    </div>
+                </div>
+            </div>
 
-                                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-                                    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-                                    crossorigin="anonymous">
-                                </script>
-                                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-                                    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-                                    crossorigin="anonymous">
-                                </script>
-                                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-                                    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-                                    crossorigin="anonymous">
-                                </script>
-                                <script src="./js/scripts.js"></script>
-                        </div>
+        </div>
+
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+        <script src="js/scripts.js"></script>
+
 </body>
 
-</html>
+</html>1
