@@ -28,7 +28,7 @@
     <!-- <div class="arrow bounce"></div> -->
 
     <div class="jumbotron">
-        <div class="menu">
+        <div id="menu">
             <br>
             <br>
             <h1>MENU</h1>
@@ -127,14 +127,14 @@
         </div>
         <br>
         <br>
-        <div class="orders">
+        <div class="orders" id="orders">
             <h3>Orders</h3>
             <p>Enter your order details below</p>
             <div class="row">
 
 
             </div>
-            <div></div>
+            <div class="row">
             <div class="col-md-6">
             <form>
                 <div class="form-group">
@@ -183,11 +183,32 @@
 
             </form>
         </div>
+    </div>
+    <div class="row" id="form2">
+        <div class="col-md-6">
+        <form action="/action_page.php">
+            <div class="form-group">
+              <label for="Name">Name:</label>
+              <input type="text" class="form-control" id="email" placeholder="Enter name" name="name">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Location:</label>
+              <input type="location" class="form-control" id="pwd" placeholder="Enter location" name="pwd">
+            </div>
+            <div class="form-group">
+                <label for="Phone number">Phone number:</label>
+                <input type="number" class="form-control" id="num" placeholder="07xxxxxxxx" name="phone number" min="1">
+              </div>
+              <input type="submit" class="btn btn-info" value="Submit" onclick="">
+            <!-- <button type="submit" class="btn btn-default">Submit</button> -->
+          </form>
+        </div>
+        </div>
 
 
 
             <div>
-                <div class="footer">
+                <div class="footer" id="contact">
                     <div class="contacts">
                         <h2>CONTACTS</h>
                             <br>
@@ -219,4 +240,4 @@
 
 </body>
 
-</html>1
+</html>
