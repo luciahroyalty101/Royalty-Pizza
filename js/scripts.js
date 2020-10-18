@@ -20,17 +20,27 @@ function orderPizza() {
     }
     console.log(actualTop);
 
-    
+
     var qu = document.getElementById("usr").value;
     var actualQu = parseInt(qu);
     console.log(actualQu);
-    
-   
-    var totalPrice= actualSize + actualCrust + actualTop * actualQu;
-    console.log (totalPrice);
-    alert("Your order of " + actualQu +"Pizzas has been received.Your total amount payable is"+ totalPrice + "")
-    
+
+
+    var totalPrice = actualSize + actualCrust + actualTop * actualQu;
+    console.log(totalPrice);
+    alert("Your order of " + actualQu + "Pizzas has been received.Your total amount payable is" + totalPrice + "")
+
 }
 
 // alert("Your order of" +getAmount() + "has been received.Your total amount payable is"+ totalPrice + "")
 
+
+
+
+function dolly() {
+    event.preventDefault();
+    var name = $("#nam").val();
+    var loca = $("#lct").val();
+
+    alert("THANKS " + name + " your order will be delivered at " + loca)
+}
