@@ -25,28 +25,6 @@ function orderPizza() {
     var actualQu = parseInt(qu);
     console.log(actualQu);
     
-
-    // var onions = 0;
-    // var addOnions = document.getElementById("topping").value;
-    // if (addOnions.checked === true) {
-    //     onions = 60;
-    // }
-    // var bacon = 0;
-    // var addBacon = document.getElementById("topping").value;
-    // if (addBacon.checked === true) {
-    //     bacon = 70;
-    // }
-        
-    // var extraCheese = 0;
-    // var addExtraCheese = document.getElementById("topping").value;
-    // if (addExtraCheese.checked === true) {
-    //     extraCheese = 80;
-    // }
-    // var sausage = 0;
-    // var addSausage = document.getElementById("topping").value;
-    // if (addSausage.checked === true) {
-    //     sausage = 90;
-    // }
    
     var totalPrice= actualSize + actualCrust + actualTop * actualQu;
     console.log (totalPrice);
