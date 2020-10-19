@@ -20,7 +20,6 @@ function orderPizza() {
     }
     console.log(actualTop);
 
-
     var qu = document.getElementById("usr").value;
     var actualQu = parseInt(qu);
     console.log(actualQu);
@@ -28,7 +27,7 @@ function orderPizza() {
 
     var totalPrice = actualSize + actualCrust + actualTop * actualQu;
     console.log(totalPrice);
-    alert("Your order of " + actualQu + "Pizzas has been received.Your total amount payable is" + totalPrice + "")
+    alert("Your order of " + actualQu  + "Pizzas has been received.Your total amount payable is" + totalPrice)
 
 }
 
