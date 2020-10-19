@@ -48,16 +48,6 @@
                         <a href="#" class="btn btn-primary">Caserole pizza</a>
                     </div>
                 </div>
-                <!-- <div class="col-md-4">
-                    <div class="card" style="width:400px">
-                        <img class="card-img-top" src="./images/cheesy.jpeg" alt="Card image" style="width:100%">
-                        <div class="card-body"></div>
-                        <p class="card-text"> This crowd pleaser includes tender penne pasta, browned meat, pepperoni,
-                            olives, bell
-                            peppers, and cheese smothered in marinara sauce.</p>
-                        <a href="#" class="btn btn-primary">Caserole pizza</a>
-                    </div>
-                </div> -->
                 <div class="col-md-4">
                     <div class="card" style="width:400px">
                         <img class="card-img-top" src="./images/Dominos-bacon.jpeg" id="lucy" alt="Card image"
@@ -135,75 +125,76 @@
 
             </div>
             <div class="row">
-            <div class="col-md-6">
-            <form>
-                <div class="form-group">
-                    <label for="sel1">Select your flavour:</label>
-                    <select class="form-control" id="sel1">
-                        <option>Select your favourite flavour here</option>
-                        <option>Margerita pizza</option>
-                        <option>BBQ chicken pizza</option>
-                        <option>Pepperoni pizza</option>
-                        <option>Hawaian pizza</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="sel1">Select size :</label>
-                    <select class="form-control" id="size">
-                        <option>Select size here</option>
-                        <option value="1000">large-sh.1000</option>
-                        <option value="800">medium-sh.800</option>
-                        <option value="600">small-sh.600</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="sel1">Select your favourite crust:</label>
-                    <select class="form-control" id="crust">
-                        <option>Select your preffered crust here</option>
-                        <option value="200">Crispy @sh.200</option>
-                        <option value="250">Stuffed @sh.250</option>
-                        <option value="300">Glutten-free @sh.300</option>
-                    </select>
-                </div>
-                <p>Choose your desired topping</p>
-                <div class="form-group" id="toppings">
-                    <input type="radio" name="topping" value="60">Onions
-                    <input type="radio" name="topping" value="70">Bacon
-                    <input type="radio" name="topping" value="80">Extra cheese
-                    <input type="radio" name="topping" value="90">Sausage
-                </div>
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-group">
+                            <label for="sel1">Select your flavour:</label>
+                            <select class="form-control" id="sel1">
+                                <option>Select your favourite flavour here</option>
+                                <option>Margerita pizza</option>
+                                <option>BBQ chicken pizza</option>
+                                <option>Pepperoni pizza</option>
+                                <option>Hawaian pizza</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="sel1">Select size :</label>
+                            <select class="form-control" id="size">
+                                <option>Select size here</option>
+                                <option value="1000">large-sh.1000</option>
+                                <option value="800">medium-sh.800</option>
+                                <option value="600">small-sh.600</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="sel1">Select your favourite crust:</label>
+                            <select class="form-control" id="crust">
+                                <option>Select your preffered crust here</option>
+                                <option value="200">Crispy @sh.200</option>
+                                <option value="250">Stuffed @sh.250</option>
+                                <option value="300">Glutten-free @sh.300</option>
+                            </select>
+                        </div>
+                        <p>Choose your desired topping</p>
+                        <div class="form-group" id="toppings">
+                            <input type="radio" name="topping" value="60">Onions
+                            <input type="radio" name="topping" value="70">Bacon
+                            <input type="radio" name="topping" value="80">Extra cheese
+                            <input type="radio" name="topping" value="90">Sausage
+                        </div>
 
-                <div class="form-group">
-                    <label for="usr">pizza quantity:</label>
-                    <input type="number" class="form-control" id="usr">
+                        <div class="form-group">
+                            <label for="usr">pizza quantity:</label>
+                            <input type="number" class="form-control" id="usr">
+                        </div>
+
+                        <input type="submit" class="btn btn-info" value="Submit" onclick="orderPizza()">
+                        <br>
+
+                    </form>
                 </div>
-
-                <input type="submit" class="btn btn-info" value="Submit" onclick="orderPizza()">
-                <br>
-
-            </form>
-        </div>
-    </div>
-    <div class="row" id="form2">
-        <div class="col-md-6">
-        <form action="/action_page.php">
-            <div class="form-group">
-              <label for="Name">Name:</label>
-              <input type="text" class="form-control" id="nam" placeholder="Enter name" name="name">
             </div>
-            <div class="form-group">
-              <label for="pwd">Location:</label>
-              <input type="location" class="form-control" id="lct" placeholder="Enter location" name="pwd">
+            <div class="row" id="form2">
+                <div class="col-md-6">
+                    <form action="/action_page.php">
+                        <div class="form-group">
+                            <label for="Name">Name:</label>
+                            <input type="text" class="form-control" id="nam" placeholder="Enter name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Location:</label>
+                            <input type="location" class="form-control" id="lct" placeholder="Enter location"
+                                name="pwd" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="Phone number">Phone number:</label>
+                            <input type="number" class="form-control" id="num" placeholder="07xxxxxxxx"
+                                name="phone number" min="1">
+                        </div>
+                        <input type="submit" class="btn btn-info" value="Submit" onclick="dolly()">
+                    </form>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="Phone number">Phone number:</label>
-                <input type="number" class="form-control" id="num" placeholder="07xxxxxxxx" name="phone number" min="1">
-              </div>
-              <input type="submit" class="btn btn-info" value="Submit" onclick="dolly()">
-            <!-- <button type="submit" class="btn btn-default">Submit</button> -->
-          </form>
-        </div>
-        </div>
 
 
 
