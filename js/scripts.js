@@ -31,7 +31,7 @@ function orderPizza() {
 
 }
 
-// alert("Your order of" +getAmount() + "has been received.Your total amount payable is"+ totalPrice + "")
+
 
 
 
@@ -41,5 +41,5 @@ function dolly() {
     var name = $("#nam").val();
     var loca = $("#lct").val();
 
-    alert("THANKS " + name + " your order will be delivered at " + loca)
+    alert("THANKS " + name + " ,your order will be delivered at " + loca +" within an hour.The deliverly will cost sh.180.Thank you for chosing Royalty pizza-inn")
 }
